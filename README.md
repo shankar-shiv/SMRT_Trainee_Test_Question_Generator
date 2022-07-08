@@ -1,4 +1,4 @@
-# SMRT_Trainee_Test_Question_Generator
+# SMRT Trainee Test Question Generator
 Uses the latest and greatest T5 Transformer models to autogenerate test questions for SMRT Trainees
 
 
@@ -9,19 +9,20 @@ Uses the latest and greatest T5 Transformer models to autogenerate test question
 
 
 # Next Up
-| Task           | Time required | Assigned to   | Current Status | Finished |
-| -------------- | ------------- | ------------- | -------------- | -------- |
-| Calendar Cache | > 5 hours     | @shankar-shiv |                |          |
-| Calendar Cache | > 5 hours     | @shankar-shiv |                |          |
-| Calendar Cache | > 5 hours     | @shankar-shiv |                |          |
+| Task | Time required | Assigned to   | Current Status |
+| ---- | ------------- | ------------- | -------------- |
+|      |               | @shankar-shiv |                |
 
 # In progress
-| Task            | Time required | Assigned to   | Current Status | Finished |
-| --------------- | ------------- | ------------- | -------------- | -------- |
-| Collecting data | > 2 weeks     | @shankar-shiv |                |          |
-| Web app         |               | @shankar-shiv |                |          |
-| Report Writing  |               | @shankar-shiv |                |          |
-| Slides          |               | @shankar-shiv |                |          |
+| Task              | Time required | Assigned to   | Current Status |
+| ----------------- | ------------- | ------------- | -------------- |
+| Collecting data   | > 2 weeks     | @shankar-shiv | completed      |
+| Creating pipeline | > 2 weeks     | @shankar-shiv | completed      |
+| Evaluating model  | > 2 weeks     | @shankar-shiv | completed      |
+| Collecting data   | > 2 weeks     | @shankar-shiv | ongoing        |
+| Web app           | > 2 weeks     | @shankar-shiv | ongoing        |
+| Report Writing    | > 2 weeks     | @shankar-shiv | ongoing        |
+| Slides            | > 2 weeks     | @shankar-shiv | ongoing        |
 
 # Completed
 | Task              | Time required | Assigned to   |
