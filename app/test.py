@@ -1,6 +1,6 @@
 import streamlit as st
 import numpy as np
-from pandas import DataFrame
+import pandas as pd
 import seaborn as sns
 # For download buttons
 from functionforDownloadButtons import download_button
@@ -10,6 +10,8 @@ import re
 import pprint
 import pickle
 import data
+import matplotlib.pyplot as plt
+import altair as alt
 
 st.set_page_config(
     page_title="Test Question Generator",
@@ -74,7 +76,39 @@ with c3:
 
 # Evaluation results here
 
-with st.expander("ℹ️ - Advanced Evaluation Metrics", expanded=True):
-    st.write("As an advanced evaluation metric, semantic answer similarity (SAS) can be calculated. This metric takes into account whether the meaning of a predicted answer is similar to the annotated gold answer rather than just doing string comparison")
+with st.expander("ℹ️ - Evaluation Metrics", expanded=True):
+    st.write("To be able to make a statement about the quality of results a question-answering pipeline or any other pipeline in haystack produces, it is important to evaluate it. Furthermore, evaluation allows determining which components of the pipeline can be improved. The results of the evaluation can be saved as CSV files, which contain all the information to calculate additional metrics later on or inspect individual predictions")
     st.markdown("")
 
+st.markdown("""Before training the FARMmodel (reader):
+- Retriever - Recall (single relevant document): 0.8
+- Retriever - Recall (multiple relevant documents): 0.8
+- Retriever - Mean Reciprocal Rank: 0.6247619047619047
+- Retriever - Precision: 0.16571428571428576
+- Retriever - Mean Average Precision: 0.6257142857142857
+- Reader - F1-Score: 0.35396155963876497
+- Reader - Exact Match: 0.05714285714285714
+
+After training the FARM model (reader)
+- Retriever - Recall (single relevant document): 0.8
+- Retriever - Recall (multiple relevant documents): 0.8
+- Retriever - Mean Reciprocal Rank: 0.6247619047619047
+- Retriever - Precision: 0.16571428571428576
+- Retriever - Mean Average Precision: 0.6257142857142857
+- Reader - F1-Score: 0.5805476872540989
+- Reader - Exact Match: 0.4
+
+#### Overall Score
+- 0.61671585""")
+
+source = pd.DataFrame({
+    'Score': [0.5805476872540989*100, 0.4*100, 0.61671585*100],
+    'Metrics': ['F1-Score', 'Exact Match', 'Overall Score']
+    })
+
+bar_chart = alt.Chart(source).mark_bar().encode(
+    y='Score',
+    x='Metrics',
+)
+
+st.altair_chart(bar_chart, use_container_width=True)
