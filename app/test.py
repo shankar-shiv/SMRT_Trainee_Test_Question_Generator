@@ -1,7 +1,6 @@
 import streamlit as st
 import numpy as np
 import pandas as pd
-import seaborn as sns
 # For download buttons
 from functionforDownloadButtons import download_button
 import os
