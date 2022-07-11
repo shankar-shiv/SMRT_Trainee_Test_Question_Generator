@@ -24,8 +24,8 @@ with st.expander("ℹ️ - Quick Start", expanded=True):
         """     
 -   The *BERT Keyword Extractor* app is an easy-to-use interface built in Streamlit for the amazing [KeyBERT](https://github.com/MaartenGr/KeyBERT) library from Maarten Grootendorst!
 -   It uses a minimal keyword extraction technique that leverages multiple NLP embeddings and relies on [Transformers] (https://huggingface.co/transformers/) 🤗 to create keywords/keyphrases that are most similar to a document.
-	    """
-    )
+- Done by Shiva Shankar (Computer Science, National University of Singapore)
+        """)
     st.markdown("")
 
 st.markdown("")
