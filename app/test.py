@@ -9,7 +9,6 @@ import re
 import pprint
 import pickle
 import data
-import matplotlib.pyplot as plt
 import altair as alt
 
 st.set_page_config(
