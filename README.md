@@ -1,6 +1,8 @@
 # SMRT Trainee Test Question Generator
 Uses the latest and greatest T5 Transformer models to autogenerate test questions for SMRT Trainees
 
+virtual environment : SMRT_Trainee_Test_Question_Generator
+
 
 + Pick components that perform retrieval, question answering, reranking and much more
 + Utilizes transformer based models (ex: BERT, RoBERTa, MiniLM, DPR)

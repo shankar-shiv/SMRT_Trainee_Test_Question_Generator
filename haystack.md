@@ -259,7 +259,7 @@ In Question Answering, to enforce that the retrieved document is considered corr
 
 ---
 
-# **Generator**
+# Generator
 
 The Generator reads a set of documents and generates an answer to a question, word by word. While extractive QA highlights the span of text that answers a query, generative QA can return a novel text answer that it has composed.
 
@@ -296,4 +296,4 @@ The best current approaches, such as [Retriever-Augmented Generation](https://a
     A smaller model is deepset/tinybert-6l-768d-squad2 It's about half the size so that should reduce RAM usage. However, the F1 score on the SQuAD dataset drops to 76% compared to 83% with your current deepset/roberta-large-squad2 model. You would need to check whether the answers are good enough for your application.
 
 # Turning Cloud Notebooks(Colab, Kaggle) into web app
-- Streamlit Cloud, [Huggingface spaces](https://huggingface.co/spaces), https://cloud.google.com/run (free for 1 year)
+- Streamlit Cloud, [Huggingface spaces](https://huggingface.co/spaces), https://cloud.google.com/run (free for 1 year), AWS Sagemaker
